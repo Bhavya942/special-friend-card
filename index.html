@@ -1,50 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Birthday Surprise 🎁</title>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise 🎁</title>
 
-<link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
 
-<!-- ===== COVER PAGE ===== -->
-<div id="cover">
-  <h1>For Someone Special 💖</h1>
-  <div class="subtitle">A little surprise made with love</div>
-  <div class="gift" onclick="openGift()">🎁</div>
-  <div class="tap">Tap to Open</div>
-</div>
+  <!-- ===== COVER PAGE ===== -->
+  <div id="cover">
+    <h1>For Someone Special 💖</h1>
+    <div class="subtitle">A little surprise made with love</div>
+    <div class="gift" onclick="openGift()">🎁</div>
+    <div class="tap">Tap to Open</div>
+  </div>
 
-<!-- ===== MESSAGE PAGE ===== -->
-<div id="birthday">
-  <h2>DIL ki baata</h2>
-  <p>
-    Tum meri life ki wo friend ho jo sirf sunती nahi, balki samajhti bhi ho.
-    Main maanta hoon ki main kabhi-kabhi zyada bol deta hoon, zyada overthink
-    karta hoon, aur har chhoti baat tumhare saamne rakh deta hoon. Par tumhari
-    sabse badi quality ye hai ki tum kabhi irritate nahi hoti. Tum itne patience
-    ke saath meri baat sunti ho jaise tum already solution dhoond rahi ho.<br><br>
+  <!-- ===== MESSAGE PAGE ===== -->
+  <div id="birthday">
+    <h2>DIL ki baatein 💕</h2>
 
-    Tumhari baaton me ek alag hi shanti hoti hai. Jab main tension me hota hoon,
-    tab tumhara calm nature mujhe automatically relaxed feel karwata hai.
-    Mujhe sabse zyada ye pasand hai ki tum sirf “sab theek ho jayega” nahi kehti,
-    balki sach me 1–2 din me cheezein theek ho jaati hain, jaise tumhari baaton
-    me koi magic ho.<br><br>
+    <div class="message">
+    Tum meri life ki wo ladki ho jo sirf sunti nahi, balki mujhe poori tarah samajhti bhi ho. Main maanta hoon ki main kabhi-kabhi zyada bol deta hoon, overthink karta hoon, aur apni har chhoti baat tumhare saamne rakh deta hoon. Par tumhari sabse khaas baat ye hai ki tum hamesha patience ke saath mujhe sunti ho, bina judge kiye, bina thake.
 
-    Tum bahut caring ho, bina dikhawa ke. Tumhari honesty, tumhara support,
-    aur tumhara understanding nature tumhe special banata hai. Tum na sirf
-    meri friend ho, balki wo insaan ho jiske saamne main bina soche apni har
-    baat keh sakta hoon.<br><br>
+  Tumhari baaton me ek alag hi sukoon hota hai. Jab main tension me hota hoon, tumhara calm nature mujhe automatically strong feel karwata hai. Mujhe ye bahut pasand hai ki tum sirf “sab theek ho jayega” nahi kehti, balki tumhari baaton se sach me sab theek hone lagta hai, jaise tumhari presence hi solution ho.
 
-    Sach bolun to, tumhari friendship meri life ke strongest pillars me se ek
-    hai. Tum jaisi ho, waisi hi rehna—kyunki tumhari simplicity aur maturity hi
-    tumhari sabse badi tareef hai 🌷💫
-  </p>
-</div>
+  Tum bahut caring ho, bina kisi dikhawa ke. Tumhari honesty, tumhara support aur tumhara understanding nature mujhe tumse aur bhi zyada connect kar deta hai. Sach kahun to, mujhe tumhari aadat si ho gayi hai — tumhari baatein, tumhara saath, aur tumhari simplicity.
 
-<script src="script.js"></script>
-</body>
-</html>
+  Isliye aaj dil se poochna chahta hoon — kya tum meri zindagi ka wo hissa banogi jahan main apna har kal, har khushi aur har struggle tumhare saath share kar sakun? 🌷💫
+    </div>
+
+    <button class="music-btn" onclick="toggleMusic()">⏸ Pause Music</button>
+  </div>
+
+  <!-- AUDIO (LOCAL FILE) -->
+  <audio id="song">
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+  </body>
+  </html>
