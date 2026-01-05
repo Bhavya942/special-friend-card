@@ -16,7 +16,7 @@ body{
   overflow:hidden;
 }
 
-/* COVER CARD */
+/* ===== COVER ===== */
 #cover{
   background:rgba(255,255,255,0.15);
   backdrop-filter:blur(15px);
@@ -37,7 +37,7 @@ body{
 }
 
 .subtitle{
-  color:white;
+  color:#fff;
   font-size:15px;
   opacity:0.9;
   margin-bottom:25px;
@@ -59,16 +59,15 @@ body{
   margin-top:15px;
   color:white;
   font-size:16px;
-  letter-spacing:1px;
 }
 
-/* MESSAGE CARD */
+/* ===== MESSAGE CARD ===== */
 #birthday{
   display:none;
   background:white;
   width:90%;
   max-width:360px;
-  padding:28px;
+  padding:24px;
   border-radius:22px;
   text-align:center;
   box-shadow:0 25px 50px rgba(0,0,0,0.35);
@@ -77,24 +76,47 @@ body{
 
 #birthday h2{
   color:#ff4d6d;
-  margin-bottom:12px;
+  margin-bottom:10px;
   animation:textGlow 2s infinite alternate;
 }
 
-#birthday p{
+/* ===== SCROLLABLE MESSAGE ===== */
+.message{
+  max-height:220px;
+  overflow-y:auto;
+  padding-right:8px;
   font-size:14px;
   color:#444;
   line-height:1.7;
 }
 
-/* HEARTS */
+/* Scrollbar */
+.message::-webkit-scrollbar{ width:6px; }
+.message::-webkit-scrollbar-thumb{
+  background:#ff7eb3;
+  border-radius:10px;
+}
+.message::-webkit-scrollbar-track{ background:#ffe4ec; }
+
+/* ===== MUSIC BUTTON ===== */
+.music-btn{
+  margin-top:12px;
+  padding:8px 16px;
+  border:none;
+  border-radius:20px;
+  background:#ff4d6d;
+  color:white;
+  cursor:pointer;
+}
+
+/* ===== HEARTS ===== */
 .heart{
   position:absolute;
   font-size:18px;
   animation:floatUp linear forwards;
 }
 
-/* ANIMATIONS */
+/* ===== ANIMATIONS ===== */
 @keyframes bgMove{
   0%{background-position:0% 50%;}
   50%{background-position:100% 50%;}
@@ -128,6 +150,6 @@ body{
 }
 
 @keyframes floatUp{
-  0%{transform:translateY(0) rotate(0deg);opacity:1;}
-  100%{transform:translateY(-120vh) rotate(360deg);opacity:0;}
+  0%{transform:translateY(0);opacity:1;}
+  100%{transform:translateY(-120vh);opacity:0;}
 }
